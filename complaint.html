@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Complaint</title>
+        <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        background-image: linear-gradient(#04AA6D,#97ECF9);
+        }
+
+        
+
+        * {
+        box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+        padding: 16px;
+        background-image: linear-gradient(#04AA6D,#97ECF9);
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        font-size: medium;
+        position: absolute;
+        padding: 16px 20px;
+        top: 670px;
+        border: none;
+        cursor: pointer;
+        left: 600px;
+        width: 15%;
+        opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+        opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+        color: rgb(255, 255, 255);
+        }
+
+        h1{
+            position: absolute;
+            top: 0;
+            left: 600px;
+        }
+
+        </style>
+    </head>
+    <body>
+        <form method="post" action="send.php">
+            <div class="container">
+                <h1>Raise a complaint</h1><br><br>
+                <p>Please fill in this form to register your complaint</p>
+
+                <label for="first name"><b>First Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" id="name" required>
+
+                <label for="last name"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter name" name="name" id="name" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+                <label for="telephone"><b>Phone Number</b></label><br>
+                <input type="telephone" placeholder="Enter phone number" name="telephone" id="telephone" required><br><br>
+
+                <label for="address"><b>Address</b></label><br>
+                <input type="text" placeholder="Enter address" name="address" id="address" required>
+
+                <label for="complaint"><b>Add a Complaint</b></label><br>
+                <textarea style="height:100px; width:1555px;" name="complaint" id="complaint" placeholder="Enter your complaint here" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission" required>
+                <p><br></p>
+
+                <button type="submit" class="registerbtn"><a href="confirmation.html">Submit</a></button>
+            </div>
+        
+        </form>
+    </body>
+</html>

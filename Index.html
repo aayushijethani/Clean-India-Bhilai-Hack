@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Municipal-Corporation</title>
+        <style>
+            * {box-sizing: border-box;}
+            * {margin:0; padding:0;}
+            body {
+                font-family: Verdana, sans-serif;
+                background-image: linear-gradient(#97ECF9,#04AA6D);
+                
+                }
+            .mySlides {display: none;}
+            img {vertical-align: middle;}
+            
+            html {
+            height: 100%;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            top: 150px;
+            }
+            
+            /* Caption text */
+            .text {
+            color: #000000;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 15px 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+            }
+            
+            .active {
+            background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+            
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}
+            }
+            
+            .topnav {
+            overflow: hidden;
+            background-color: #333;
+            width: 80.8%;
+            position: absolute;
+            top: 0px;
+            left: 120px;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 20px 15px;
+            text-decoration: none;
+            font-size: 17px;
+            top: 0;
+            }
+
+            .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+            }
+
+            .dropdown {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 20px 25px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+            }
+
+            .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            }
+
+            .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            }
+
+            .dropdown-content a:hover {
+            background-color: #ddd;
+            }
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
+            h1 {
+            position: absolute;
+            text-align: center;
+            left: 600px;
+            top: 700px;
+            }
+
+            h2{
+                position: absolute;
+                left: 50px;
+                top: 885px;
+            }
+
+            h3{
+                position: absolute;
+                left: 50px;
+                top: 970px;
+            }
+            .maincontent {
+                top: 700px;
+                margin-right: 80px;
+            }
+
+            .About{
+                margin-right: 80px;
+            }
+
+            .History{
+                margin-right: 50px;
+            }
+
+            </style>
+    </head>
+    <body>
+        <img src=
+        "digital-india-logo.jpg" alt="Digital India logo" align="right" width="150" height="90">
+        <img src=
+        "RJN.jpg" alt="Rajnandgaon logo" align="left" width="120" height="100">
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="section1">
+
+        <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="digvijay.jpg" align="center" width="970" height="500"> 
+            <div class="text">Digvijay Stadium</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="hockey stadium.jpg" align="center" width="970" height="500">
+            <div class="text">Hockey Stadium</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="patal bhairavi.jpg" align="center" width="970" height="500">
+            <div class="text">Patal Bhairavi</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+                
+            function showSlides() 
+            {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++)
+                {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 4000); // Change image every 2 seconds
+            }
+        </script>
+        <div class="topnav" align="center" id="section1">
+            <a class="active" href="#home">Home</a>
+            <a class="about" href="#district">About District</a>
+            <a href="complaint.html">Raise a complaint</a>
+            <a href="contactUs.html">Contact</a>
+        </div>
+
+        <h1 style="text-align: center">About District</h1>
+        <div class="About" style = "position:relative; left:50px; top:220px;">
+            <p>The District Rajnandgaon came into existence on 26th Jan’ 1973, by way of division of District Durg. 
+                The Rajnandgaon state was ruled by Somvanshis, Kalchuris and Marathas. 
+                The Rajnandgaon was originally named as Nandgram.
+                The Palaces in the town of Rajnandgaon reveals its own tale of the rulers, their society & culture and the splendid tradition during that time.
+                The contribution of Gajanan Madhav Muktibodh, Padumlal Punnalal Bakshi and Baldeo Prasad Mishra in the field of Hindi literature has a special mention. 
+                The District Kawardha was later bifurcated from the District on 1st July 1998. 
+                The District Rajnandgaon is in the central part of Chhattisgarh.
+                The District headquarter Rajnandgaon is on the Mumbai – Howrah line of south eastern railways.
+                The National Highway 6 (Great Eastern Road) also passes through the town of Rajnandgaon.</p>
+        </div>
+            
+        <h2>History</h2>
+        <div class="History" style = "position:absolute; left:50px; top: 920px;">
+            <p>The history of the city still reflects in present days. Rajnandgaon was known as a place of the scholars, wise, and the culturally influenced people.
+                The glory and heritage of the Rajnandgaon City can be seen even now.<br>
+            </p>
+        </div>
+        
+        <h3>Ancient History</h3>
+         <div class="Ancient History" style="position: absolute; left:50px; top:1000px;">
+            <p>The city that is part of the Rajnandgaon District is one of the historically enriched places of India. The glorious past, the beautiful nature and the abundance of the resources have made Rajnandgaon as one of the emerging cities in India. The city that is situated at the Central Large Plain has a sound history. The ancient, contemporary and the recent history of the city sound interesting and exciting. Rajnandgaon was one of those areas in ancient India that did not come into the light in earlier days. The city was ruled by the famous dynasties like Somvanshies, Kalchuries later on Maratha. However, the history of the city is not to be sidelined. Like other parts of India, Rajnandgaon was also a culture centered city. In early days the city was called as Nandgram. The history of the then a small state may not have been eventful, but the city did enough to make a mark on the pages of history.<br>
+                The State of Rajnandgaon actually came into existence in 1830. Bairagi Vaishnav Mahant transferred his capital to present days Rajnandgaon. The city was named after the descendants of Lord Krishna, Nands, Nandgram. However, the name was changed to Rajnandgaon soon after. Due to the size of the state, Nandgram was generally ruled by the Hindu Caretakers. In the history of Rajnandgaon, they are known as Vaishnav. The state was mostly under the Hindu Kings and Dynasties. The palaces, the streets, the old and historical remains of Rajnandgaon depict the culture and glory of the bygone era.<br> </p>
+                <p> <br> <br> </p>
+        </div>
+    </body>
+</html>

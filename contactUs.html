@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+        <style>
+        
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            background-image: linear-gradient(#04AA6D,#97ECF9);
+            }
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+            }
+
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+
+            /* Add a background color and some padding around the form */
+            .container {
+            border-radius: 5px;
+            padding: 20px;
+            background-image: linear-gradient(#04AA6D,#97ECF9);
+            }
+
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            h1{
+                position: absolute;
+                top: 0;
+                left: 750px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Contact Us</h1><br><br>
+            <form action="action_page.php">
+        
+            <label for="fname"><b>First Name</b></label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter First name">
+        
+            <label for="lname"><b>Last Name</b></label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        
+            <label for="telephone"><b>Phone Number</b></label><br>
+            <input type="telephone" placeholder="Enter phone number" name="telephone" id="telephone" required><br><br>
+        
+            <label for="message"><b>Message</b></label>
+            <textarea id="message" name="message" placeholder="Write your message here" style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+                
+            </form>
+            <center>
+                <h3>
+                    <a href="#"><img src="fb.png" alt="FB logo" width="30" height="30"> </a>
+                    <a href="#"><img src="twitter.png" alt="twitter logo" width="30" height="30"></a>
+                    <a href="#"><img src="instagram.jpg" alt="insta logo" width="30" height="30"></a>
+                </h3>
+            </center>
+        </div>
+    </body>
+</html>
